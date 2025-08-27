@@ -19,10 +19,10 @@ This project demonstrates CRUD operations: Add, View, Edit, and Delete student r
 
 ### 1. Clone Repository:
 
-git clone https://github.com/iam-vinodkumar/python-flask-app.git
+git clone https://github.com/iam-vinodkumar/python_flask_app.git
 
 
-cd python-flask-app
+cd python_flask_app
 
 2. Setup Virtual Environment:
 python -m venv venv
