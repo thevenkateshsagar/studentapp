@@ -13,26 +13,15 @@ This project demonstrates CRUD operations: Add, View, Edit, and Delete student r
 - HTML templates rendered with Flask (Jinja2)
 - MySQL as backend database
 
---------------------------------------------------------------------------------------
-
-##  Project Structure:
-flask-mysql-app/
-│── app.py # Main Flask application
-│── requirements.txt # Python dependencies
-│── templates/ # HTML templates (Jinja2)
-│ ├── index.html
-│ ├── add.html
-│ ├── edit.html
-│── .gitignore # Ignored files for Git
-│── README.md # Project documentation
-
-
 -----------------------------------------------------------------------------------
 
 ##  Installation & Setup:
 
 ### 1. Clone Repository:
+
 git clone https://github.com/iam-vinodkumar/python-flask-app.git
+
+
 cd python-flask-app
 
 2. Setup Virtual Environment:
@@ -89,7 +78,7 @@ This is a 2-tier architecture:
                              |  studentdb        |
 +-------------------+        +-------------------+
 
-Dependencies:
+**Dependencies:**
 
 Flask
 
@@ -99,7 +88,7 @@ Install via:
 
 pip install flask flask-mysqldb
 
-License:
+**License:**
 
 This project is licensed under the MIT License.
 Feel free to fork and enhance
