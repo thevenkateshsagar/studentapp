@@ -2,7 +2,7 @@ name: Flask CI/CD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -52,7 +52,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push Docker image
-        run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/flask-mysql-app:${{ github.sha }} .
-          docker push ${{ secrets.DOCKER_USERNAME }}/flask-mysql-app:${{ github.sha }}
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/flask-mysql-app:latest
