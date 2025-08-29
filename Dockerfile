@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first (to leverage caching)
+# Copy requirements file first (to leverage caching)
 COPY requirements.txt .
 
 # Install Python dependencies
