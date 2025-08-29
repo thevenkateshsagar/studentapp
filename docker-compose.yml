@@ -3,7 +3,7 @@ version: "3.8"
 services:
   web:
     build: .
-    container_name: flask_app
+    container_name: vflask_app
     ports:
       - "5000:5000"
     depends_on:
@@ -11,12 +11,12 @@ services:
     environment:
       - MYSQL_HOST=db
       - MYSQL_USER=root
-      - MYSQL_PASSWORD=root
+      - MYSQL_PASSWORD=Welcome@123
       - MYSQL_DATABASE=studentdb
 
   db:
     image: mysql:8.0
-    container_name: mysql_db
+    container_name: mysql-vcontainer
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
